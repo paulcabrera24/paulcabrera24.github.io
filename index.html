@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/estilos.css">
+
+    <title>Portafolio de Proyectos</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <h1>Paul Cabrera Ayala</h1>
+                <p>Desarrollador Web</p>
+            </div>
+            <form action="">
+                <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+            </form>
+            <div class="categorias" id="categorias">
+                <a href="#" class="activo">Todos</a>
+                <a href="#">Educación</a>
+                <a href="#">Negocios</a>
+                <a href="#">Entretenimiento</a>
+                <a href="#">Servicios</a>
+
+            </div>
+        </header>
+
+        <section class="grid" id="grid">
+            <div class="item" data-categoria="educacion" data-etiquetas="programacion enseñar educacion goteam e-learning javascript" data-descripcion="1. Desarrollado con JavaScript y subido a un hosting con Mysql">
+
+                <div class="item-contenido">
+                    <img src="img/goteam1.png" alt="">
+                </div>
+            </div>
+
+            <div class="item" data-categoria="educacion" data-etiquetas="programacion enseñar educacion goteam e-learning javascript" data-descripcion="1. Desarrollado con JavaScript y subido a un hosting con Mysql">
+
+                <div class="item-contenido">
+                    <img src="img/amazon1.png" alt="">
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
