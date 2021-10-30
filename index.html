@@ -9,6 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@200;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">  
+    <script src="https://kit.fontawesome.com/5a1f8ca323.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/img/portafolio.png" type="image/x-icon">
     <link rel="stylesheet" href="/estilos.css">
 
     <title>Portafolio de Proyectos</title>
@@ -16,9 +22,10 @@
 
 <body>
     <div class="contenedor">
+        
         <header>
             <div class="logo">
-                <h1>Paul Cabrera Ayala</h1>
+                <h1>Paul Cabrera</h1>
                 <p>Desarrollador Web</p>
             </div>
             <form action="">
@@ -35,21 +42,80 @@
         </header>
 
         <section class="grid" id="grid">
-            <div class="item" data-categoria="educacion" data-etiquetas="programacion enseñar educacion goteam e-learning javascript" data-descripcion="1. Desarrollado con JavaScript y subido a un hosting con Mysql">
+            <div class="item" data-categoria="educación" data-etiquetas="programacion php enseñar servicios educacion goteam javascript" data-descripcion="1. Desarrollado con JavaScript y PHP" data-pagina="https://paulcabreraayala.000webhostapp.com/">
 
                 <div class="item-contenido">
                     <img src="img/goteam1.png" alt="">
+                    
                 </div>
             </div>
 
-            <div class="item" data-categoria="educacion" data-etiquetas="programacion enseñar educacion goteam e-learning javascript" data-descripcion="1. Desarrollado con JavaScript y subido a un hosting con Mysql">
+            <div class="item" data-categoria="negocios" data-etiquetas="amazon typescript php negocios servicios angular" data-descripcion="2. Desarrollado con TypeScript en Angular y PHP" data-pagina="https://paulcabreraayalaproyecto.000webhostapp.com/">
 
                 <div class="item-contenido">
                     <img src="img/amazon1.png" alt="">
+                 
+                </div>
+            </div>
+
+            <div class="item" data-categoria="entretenimiento" data-etiquetas="marvel php ocio loki dr strange blackwidow avengers rojo javascript servicios" data-descripcion="3. Desarrollado JavaScript y PHP - Servicios WEB">
+
+                <div class="item-contenido">
+                    <img src="img/marvels.png" alt="">
+                </div>
+            </div>
+
+            <div class="item" data-categoria="servicios" data-etiquetas="amazon negocios servicios playa hotel" data-descripcion="4. Desarrollado en HTML y CSS">
+
+                <div class="item-contenido">
+                    <img src="img/hotel.png" alt="">
                 </div>
             </div>
 
         </section>
+
+        <section class="overlay " id="overlay">
+            <div class="contenedor-img">
+                <button id="btn-cerrar-popup"><i class="far fa-times-circle"></i></button>
+
+                <img src="" alt="">
+
+            </div>
+            <a class="pagina" href="" target="_blank">
+            <p class="descripcion">
+                
+            </p>
+            </a>
+        </section>
+
+        <footer class="contenedor">
+            <div class="redes-sociales">
+                <div class="contenedor-icono">
+                    <a href="https://github.com/paulcabrera24/paulcabrera24.github.io" target="_blank" title="GitHub" class="git">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+
+                <div class="contenedor-icono">
+                    <a href="https://www.linkedin.com/in/paul-cabrera-ayala-260439131/" target="_blank" title="Linkedin" class="linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+
+                <div class="contenedor-icono">
+                    <a href="https://www.instagram.com/paul_cabrera.a/" target="_blank" title="Instagram" class="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="creado-por">
+                <p>Sitio diseñado por <a href="#">Paul Cabrera</a> - <a href="mailto:zpaul110@gmail.com">zpaul110@gmail.com</a></p>
+            </div>
+            <div class="celular">
+                <p>Celular: <a href="#">+51 951154799</a></p>
+            </div>
+        </footer>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>

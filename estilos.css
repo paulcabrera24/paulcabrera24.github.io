@@ -13,6 +13,7 @@ a {
     text-decoration: none;
 }
 
+
 .contenedor {
     width: 90%;
     max-width: 800px;
@@ -107,4 +108,145 @@ header .categorias a.activo {
     width: 100%;
     cursor: pointer;
     vertical-align: top;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .9);
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.overlay.activo {
+    display: flex;
+}
+
+.overlay img {
+    max-width: 100%;
+    border-radius: 9px;
+}
+
+.overlay .descripcion {
+    display: block;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.contenedor-img {
+    position: relative;
+}
+
+.overlay #btn-cerrar-popup {
+    background: none;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+}
+.overlay .pagina{
+    color: rgb(129, 129, 129);
+    font-family: 'Roboto', sans-serif;
+}
+.overlay .pagina:hover{
+    color: rgb(0, 0, 0);
+
+}
+
+/* footer */
+
+footer .redes-sociales{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+footer .redes-sociales a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #000;
+    color: #fff;
+    margin: 20px;
+    text-align: center;
+    border-radius: 100px;
+    transition: .3s ease all;
+}
+footer .redes-sociales .git{
+    background: rgb(54, 54, 54);
+}
+footer .redes-sociales .linkedin{
+    background: #0e76a8 ;
+}
+footer .redes-sociales .instagram{
+    background: #c13584;
+}
+footer .redes-sociales a i{
+    font-size: 20px;
+    line-height: 60px;
+}
+
+footer .contenedor-icono:hover a {
+    animation: icono .5s ease;
+}
+
+@keyframes icono{
+    from{
+        transform: rotate3d(0,0,0,0);
+    }
+    to{
+        transform: rotate3d(0,1,0, 360deg);
+    }
+}
+
+footer .creado-por{
+    margin: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #c13584;
+}
+footer .creado-por a{
+    color: #000;
+}
+footer .creado-por a:hover{
+    text-decoration: underline;
+}
+
+footer .celular{
+    margin: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #a035c1;
+}
+footer .celular a{
+    color: #000;
+}
+footer .celular a:hover{
+    text-decoration: underline;
+}
+
+/* Mediaqueries */
+
+@media screen and (max-width:700px){
+    .grid .item {
+        width: calc(50% - 20px);
+    }
+    header .barra-busqueda{
+        width: 100%;
+    }
 }
