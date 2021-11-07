@@ -143,6 +143,15 @@ header .categorias a.activo {
     border-radius: 10px;
     max-width: 100%;
 }
+.overlay .descripcion2 {
+    display: block;
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    max-width: 100%;
+}
 
 .contenedor-img {
     position: relative;
@@ -163,6 +172,14 @@ header .categorias a.activo {
     font-family: 'Roboto', sans-serif;
 }
 .overlay .pagina:hover{
+    color: rgb(0, 0, 0);
+
+}
+.overlay .pagina2{
+    color: rgb(129, 129, 129);
+    font-family: 'Roboto', sans-serif;
+}
+.overlay .pagina2:hover{
     color: rgb(0, 0, 0);
 
 }
@@ -206,7 +223,7 @@ footer .redes-sociales .instagram{
     align-items: center;
     justify-content: center;
     border-radius: 7px;
-    color: #fff; 
+    color: #fff;
     
     margin: auto;
     background: #d6249f;

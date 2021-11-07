@@ -36,10 +36,14 @@ window.addEventListener('load', () => {
             const ruta = elemento.getAttribute('src');
             const descripcion = elemento.parentNode.parentNode.dataset.descripcion;
             const pagina = elemento.parentNode.parentNode.dataset.pagina;
+            const descripcion2 = elemento.parentNode.parentNode.dataset.descripcion2;
+            const pagina2 = elemento.parentNode.parentNode.dataset.pagina2;
             overlay.classList.add('activo');
             document.querySelector('#overlay img').src = ruta;
             document.querySelector('#overlay .descripcion').innerHTML = descripcion;
             document.querySelector('#overlay .pagina').href = pagina;
+            document.querySelector('#overlay .descripcion2').innerHTML = descripcion2;
+            document.querySelector('#overlay .pagina2').href = pagina2;
         })
     });
 
